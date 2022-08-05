@@ -1,0 +1,36 @@
+.header {
+    padding-top: 4.7rem;
+}
+
+.header__navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 55rem;
+}
+
+.header__logo {
+    width: 2.5rem;
+    height: 1.65rem;
+}
+
+.header__list {
+    position: relative;
+    left: -2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2.9rem;
+    
+    @include font(400, 1.7rem, 150%);
+    .header__item:first-child {
+        a {
+            font-weight: 700;
+        }
+    }
+    .header__item {
+        min-width: 7.2rem;
+        letter-spacing: 0.015rem;
+        a {
+            color: #BF7506;
+        }
+    }
+}
