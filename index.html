@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;800;900&;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>My-Protfolio</title>
@@ -29,5 +30,117 @@
 
         </div>
     </header>
+    <main>
+        <div class="salutation">
+            <div class="container">
+                <div class="salutation__container">
+                    <div class="salutation__emoji">
+                        <img class="memoji" src="img/main/Memoji.png" alt="">
+                    </div>
+                    <div class="salutation__object">
+                        <div class="salutation__txt">
+                            <div class="salutation__logo">Привет 👋</div>
+                            <div class="salutation__description"><span>Я фронтенд-разработчик и веб-дизайнер</span> Меня зовут Николай Шестопёров и я делаю сайты для людей и компаний</div>
+                        </div>
+                        <div class="salutation__links">
+                            <a href="#" class="salutation__link"><img src="img/main/git.svg" alt=""></a>
+                            <a href="#" class="salutation__link"><img src="img/main/screp.svg" alt=""><span>Скачать резюме</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="container">
+                <div class="project__container">
+                    <h2>Последние проекты</h2>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="project__item">
+                                    <div class="project__img">
+                                        <img src="img/main/videoapp.png" alt="">
+                                    </div>
+                                    <div class="project__txt">
+                                        <h3>Простой одностраничный сайт</h3>
+                                        <ul class="project__list">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <div class="project__links">
+                                            <a href="#"><img src="img/main/arrows.svg" alt=""><span>Код</span></a>
+                                            <a href="#"><img src="img/main/Ok.svg" alt=""><span>Демо</span></a>
+                                        </div>
+                                    </div>    
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="project__item">
+                                    <div class="project__img">
+                                        <img src="img/main/office.png" alt="">
+                                    </div>
+                                    <div class="project__txt">
+                                        <h3>Одностраничный интерактивный сайт</h3>
+                                        <ul class="project__list">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <div class="project__links">
+                                            <a href="#"><img src="img/main/arrows.svg" alt=""><span>Код</span></a>
+                                            <a href="#"><img src="img/main/Ok.svg" alt=""><span>Демо</span></a>
+                                        </div>
+                                    </div>    
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="project__item">
+                                    <div class="project__img">
+                                        <img src="img/main/delo.png" alt="">
+                                    </div>
+                                    <div class="project__txt">
+                                        <h3>Одностраничный интерактивный сайт</h3>
+                                        <ul class="project__list">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <div class="project__links">
+                                            <a href="#"><img src="img/main/arrows.svg" alt=""><span>Код</span></a>
+                                            <a href="#"><img src="img/main/Ok.svg" alt=""><span>Демо</span></a>
+                                        </div>
+                                    </div>    
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        slidesPerView: 2,
+        spaceBetween: 72,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
 </body>
 </html>
