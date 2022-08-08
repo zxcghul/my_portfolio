@@ -156,7 +156,7 @@
             <div class="container">
                 <div class="feedback__container">
                     <h2 class="feedback__title">Готов обсудить проект...</h2>
-                    <form action="#" class="form">
+                    <form action="#" method="POST" class="form">
                         <div class="input-block">
                             <label class="form__label" for="username">Имя</label>
                             <input id="username" name="client_name" type="text" class="input">
@@ -169,8 +169,9 @@
                             <label class="form__label" for="usermessage">Сообщение</label>
                             <textarea id="usermessage" name="client_message" type="text" class="input textarea"></textarea>
                         </div>
+                        <button type="submit" class="feedback__button"><img src="img/main/airplane.svg" alt=""><span>Отправить</span></button>
                     </form>
-                    <button type="submit" class="feedback__button"><img src="img/main/airplane.svg" alt=""><span>Отправить</span></button>
+                    
                 </div>
                 
             </div>  
@@ -210,6 +211,8 @@
           el: '.swiper-scrollbar',
         },
       });
+
+      
     </script>
 </body>
 </html>
