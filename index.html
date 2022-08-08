@@ -152,21 +152,22 @@
             </div>
         </div>
         <section class="feedback">
+            <img class="feedback__hand" src="img/main/hand.png" alt="">
             <div class="container">
                 <div class="feedback__container">
                     <h2 class="feedback__title">Готов обсудить проект...</h2>
                     <form action="#" class="form">
                         <div class="input-block">
                             <label class="form__label" for="username">Имя</label>
-                            <input id="username" type="text" class="input">
+                            <input id="username" name="client_name" type="text" class="input">
                         </div>
                         <div class="input-block">
                             <label class="form__label" for="useremail">Email</label>
-                            <input id="useremail" type="text" class="input">
+                            <input id="useremail" name="client_email" type="text" class="input">
                         </div>
                         <div class="input-block">
                             <label class="form__label" for="usermessage">Сообщение</label>
-                            <textarea id="usermessage" type="text" class="input textarea"></textarea>
+                            <textarea id="usermessage" name="client_message" type="text" class="input textarea"></textarea>
                         </div>
                     </form>
                     <button type="submit" class="feedback__button"><img src="img/main/airplane.svg" alt=""><span>Отправить</span></button>
@@ -175,11 +176,27 @@
             </div>  
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <p class="footer-txt">Сделано с ❤️, моими руками</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-        slidesPerView: 2,
-        spaceBetween: 72,
+
+            breakpoints: {
+                320: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                loop: false,
+                }},
+        
         pagination: {
           el: '.swiper-pagination',
         },
